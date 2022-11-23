@@ -8,4 +8,6 @@ Implimenting a <b>microservices architecture</b> into a student's bill managemen
 - <b>Dockerizing</b>  <i>ms-billing</i> & <i>ms-auth</i> microservices by creating & pushing its images  into docker hub
 ### Workflow :
 ![image](https://user-images.githubusercontent.com/84160502/203659756-9f1c4681-6a10-4ffd-bb2a-412bf8d29223.png)
+### Docker desktop :
+![image](https://user-images.githubusercontent.com/84160502/203660307-43f57b73-1858-4338-91dc-e4f71a84f8b4.png)
 
