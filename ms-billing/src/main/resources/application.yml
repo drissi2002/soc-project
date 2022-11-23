@@ -1,0 +1,24 @@
+server:
+  port : 8081
+spring:
+  application:
+    name: ms-billing
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    url: jdbc:mysql://test-mysql:3306/studentdb?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 98633589
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+ # config:
+ #  import: configserver:http://localhost:8888
+ # cloud:
+ #   config:
+ #     enabled: false

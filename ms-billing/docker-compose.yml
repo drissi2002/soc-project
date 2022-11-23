@@ -1,0 +1,22 @@
+version: '3.1'
+networks:
+  bill-mysql:
+services:
+  test-mysql:
+    image: mysql
+    restart: always
+    networks:
+      - bill-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=98633589
+      - MYSQL_DATABASE=studentdb
+
+  billsys:
+    image: drissi2002/billsys:latest
+    restart: always
+    ports:
+      - "8082:8081"
+    networks:
+      - bill-mysql
+    depends_on:
+      - test-mysql
