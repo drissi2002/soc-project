@@ -1,0 +1,27 @@
+server:
+  port : 8777
+spring:
+  application:
+    name: ms-auth
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    url: jdbc:mysql://testauth-mysql:3306/admindb?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 98633589
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+ # config:
+  #  import: configserver:http://localhost:8888
+# Around JWT secret key
+Bill:
+  app:
+    jwtSecret: BillSecretKey
+    jwtExpirationMs: 3600000
+    jwtRefreshExpirationMs : 86400000

@@ -1,0 +1,22 @@
+version: '3.1'
+networks:
+  auth-mysql:
+services:
+  testauth-mysql:
+    image: mysql
+    restart: always
+    networks:
+      - auth-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=98633589
+      - MYSQL_DATABASE=admindb
+
+  authsys:
+    image: drissi2002/authsys:latest
+    restart: always
+    ports:
+      - "8777:8777"
+    networks:
+      - auth-mysql
+    depends_on:
+      - testauth-mysql
