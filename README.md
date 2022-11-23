@@ -7,5 +7,5 @@ Implimenting a <b>microservices architecture</b> into a student's bill managemen
 - Both <b> ms-billing </b> and its frontend , as well  <b>ms-auth</b> and its frontend  are  bundled each stak together to genrate two <b>Jar</b> files 
 - <b>Dockerizing</b>  <i>ms-billing</i> & <i>ms-auth</i> microservices by creating & pushing its images  into docker hub
 ### Workflow 
-![image](https://user-images.githubusercontent.com/84160502/203659529-277a4cde-c88d-46aa-a036-cfcbb55267d6.png)
+![image](https://user-images.githubusercontent.com/84160502/203659756-9f1c4681-6a10-4ffd-bb2a-412bf8d29223.png)
 
