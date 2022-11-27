@@ -6,4 +6,6 @@ Implimenting a <b>microservices architecture</b> into a student's bill managemen
 ### Workflow :
 ![image](https://user-images.githubusercontent.com/84160502/203659756-9f1c4681-6a10-4ffd-bb2a-412bf8d29223.png)
 
+## Ressources 
+- [ Full Stack Spring Boot & React (PROFESSIONAL) ](https://amigoscode.com/p/full-stack-spring-boot-react)
 
